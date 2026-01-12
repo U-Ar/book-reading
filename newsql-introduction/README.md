@@ -27,4 +27,13 @@ Have a try:     tiup playground
 
 以降はtiupコマンドで遊ぶ
 
+## 収穫
+
+- tiup playgroundでかなり気軽にTiDBを試せることが分かったし壊し方も知った
+- TiDBのアーキテクチャがわかった
+  - コンピューティングレイヤのTiDB、ストレージレイヤのTiKV、スケジューリングやタイムスタンプ発行(Zookeeper的存在)のPD
+  - TiKVは内部的にRocksDBを2インスタンスずつ持ち、Raftログと実際のデータ格納に使う。ノード間でRaftによる一貫性と可用性の維持
+    - RocksDBはLSMツリーベース。
+  - PDもetcdでTSOを単調増加に維持
+  - 悲観ロックによる分散トランザクション管理。タイムスタンプベースのMVCCでsnapshot isolationを実現する
 
