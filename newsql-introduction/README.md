@@ -34,6 +34,6 @@ Have a try:     tiup playground
   - コンピューティングレイヤのTiDB、ストレージレイヤのTiKV、スケジューリングやタイムスタンプ発行(Zookeeper的存在)のPD
   - TiKVは内部的にRocksDBを2インスタンスずつ持ち、Raftログと実際のデータ格納に使う。ノード間でRaftによる一貫性と可用性の維持
     - RocksDBはLSMツリーベース。
-  - PDもetcdでTSOを単調増加に維持
+  - PDもRaftでリーダーを選出、etcdでTSOを単調増加に維持
   - 悲観ロックによる分散トランザクション管理。タイムスタンプベースのMVCCでsnapshot isolationを実現する
 
