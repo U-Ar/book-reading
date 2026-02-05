@@ -1,17 +1,6 @@
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
-</script>
-<script type="text/x-mathjax-config">
- MathJax.Hub.Config({
- tex2jax: {
- inlineMath: [['$', '$'] ],
- displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
- }
- });
-</script>
-
 # 2章 字句解析 演習問題
 
-## 2.1 文字列集合 $\{c\}\cdot \{a, d\}^* \cdot \{r\}$を求めよ。
+## 2.1 文字列集合 c・{a,d}*・r を求めよ。
 
 
 
@@ -57,8 +46,7 @@ graph TD;
   G --ε--> K((⑪));
 ```
 
-## 2.5
-アルゴリズム2.4に従って、全問で求めたNFAと等価なDFAを求めよ。
+## 2.5 アルゴリズム2.4に従って、全問で求めたNFAと等価なDFAを求めよ。
 
 ## 2.6 アルゴリズム2.5に従って、全問で求めたDFAを、状態数最小のDFAに変換せよ。
 
