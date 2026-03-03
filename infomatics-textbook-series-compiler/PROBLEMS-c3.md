@@ -2,7 +2,9 @@
 
 ## 3.1 論理積、論理和、論理否定の演算子を含文法GL = <PL,L>について、非終端記号の集合と終端記号の集合、語彙を求めよ。
 
-$$PL = \{ L \rightarrow A || L \vert A \\ A \rightarrow N \&\& A \vert N \\ N \rightarrow ! N \vert (L) \vert p\}$$
+```math
+PL = \{ L \rightarrow A || L \vert A \\ A \rightarrow N \&\& A \vert N \\ N \rightarrow ! N \vert (L) \vert p\}
+```
 
 非終端記号 $V_N = \{L, A, N\}$
 
@@ -20,7 +22,7 @@ $$PL = \{ L \rightarrow A || L \vert A \\ A \rightarrow N \&\& A \vert N \\ N \r
 
 最左導出
 
-$$
+```math
 L \\
 \rightarrow A || L \\
 \rightarrow N \&\& A || L \\
@@ -31,12 +33,12 @@ L \\
 \rightarrow p \&\& ! p || A \\
 \rightarrow p \&\& ! p || N \\
 \rightarrow p \&\& ! p || p
-$$
+```
 
 
 最右導出
 
-$$
+```math
 L \\
 \rightarrow A || L \\
 \rightarrow A || N \\
@@ -46,7 +48,7 @@ L \\
 \rightarrow N \&\& ! N || p \\
 \rightarrow N \&\& ! p || p \\
 \rightarrow p \&\& ! p || p 
-$$
+```
 
 ## 3.4 文法GLにおいて、論理積が論理和より優先順位が高いことを示せ。
 
