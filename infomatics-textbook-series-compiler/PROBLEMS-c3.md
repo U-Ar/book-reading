@@ -25,15 +25,15 @@ $$
 最左導出
 
 $$
-L \\
-\rightarrow A || L \\
-\rightarrow N \\&\\& A || L \\
-\rightarrow p \\&\\& A || L \\
-\rightarrow p \\&\\& N || L \\
-\rightarrow p \\&\\& ! N || L \\
-\rightarrow p \\&\\& ! p || L \\
-\rightarrow p \\&\\& ! p || A \\
-\rightarrow p \\&\\& ! p || N \\
+L \\\\
+\rightarrow A || L \\\\
+\rightarrow N \\&\\& A || L \\\\
+\rightarrow p \\&\\& A || L \\\\
+\rightarrow p \\&\\& N || L \\\\
+\rightarrow p \\&\\& ! N || L \\\\
+\rightarrow p \\&\\& ! p || L \\\\
+\rightarrow p \\&\\& ! p || A \\\\
+\rightarrow p \\&\\& ! p || N \\\\
 \rightarrow p \\&\\& ! p || p
 $$
 
@@ -41,14 +41,14 @@ $$
 最右導出
 
 $$
-L \\
-\rightarrow A || L \\
-\rightarrow A || N \\
-\rightarrow A || p \\
-\rightarrow N \\&\\& A || p \\
-\rightarrow N \\&\\&  N || p \\
-\rightarrow N \\&\\& ! N || p \\
-\rightarrow N \\&\\& ! p || p \\
+L \\\\
+\rightarrow A || L \\\\
+\rightarrow A || N \\\\
+\rightarrow A || p \\\\
+\rightarrow N \\&\\& A || p \\\\
+\rightarrow N \\&\\&  N || p \\\\
+\rightarrow N \\&\\& ! N || p \\\\
+\rightarrow N \\&\\& ! p || p \\\\
 \rightarrow p \\&\\& ! p || p 
 $$
 
@@ -59,3 +59,7 @@ $L \rightarrow A || L$ が存在し、 左の項について $A \rightarrow N \\
 $L \rightarrow A || L$ が存在し、右の項について $L \rightarrow A \rightarrow N \\&\\& A$ なので $|| < \\&\\&$
 
 以上より論理積の方が優先順位が高い。
+
+
+
+GitHubのMarkdown内LaTeX記法サポートがあまりにも劣悪でバグが多すぎるのでもうやめる
