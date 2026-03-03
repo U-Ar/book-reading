@@ -3,7 +3,9 @@
 ## 3.1 論理積、論理和、論理否定の演算子を含文法GL = <PL,L>について、非終端記号の集合と終端記号の集合、語彙を求めよ。
 
 ```math
-PL = \{ L \rightarrow A || L \vert A \\ A \rightarrow N \&\& A \vert N \\ N \rightarrow ! N \vert (L) \vert p\}
+PL = \{ L \rightarrow A || L \vert A 
+ A \rightarrow N \&\& A \vert N 
+ N \rightarrow ! N \vert (L) \vert p\}
 ```
 
 非終端記号 $V_N = \{L, A, N\}$
