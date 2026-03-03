@@ -10,7 +10,7 @@ $$
 
 非終端記号 $V_N = \lbrace L, A, N \rbrace$
 
-終端記号 $V_T = \lbrace \ampersand\ampersand , ||, !, p\rbrace$
+終端記号 $V_T = \lbrace \\&\\& , ||, !, p\rbrace$
 
 語彙 $V = V_N \cup V_T$
 
